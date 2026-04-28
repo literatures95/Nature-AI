@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "nature-ai"
+version = "0.1.0"
+description = "Nature AI Demo"
+authors = ["Your Name <your.email@example.com>"]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.104.1"
+uvicorn = "^0.24.0"
+pydantic = "^2.5.0"
+python-dotenv = "^1.0.0"
+openai = "^1.3.0"
+anthropic = "^0.7.8"
+httpx = "^0.25.2"
+pyyaml = "^6.0.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

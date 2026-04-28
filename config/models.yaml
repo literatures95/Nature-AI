@@ -1,0 +1,19 @@
+model_registry:
+  llm:
+    gpt-4o:
+      provider: "openai"
+      context_window: 128000
+      use_case: "general"
+    claude-3-5-sonnet:
+      provider: "anthropic"
+      context_window: 200000
+      use_case: "general"
+    qwen-2-5-72b:
+      provider: "alibaba"
+      context_window: 32000
+      use_case: "general"
+
+route_strategy:
+  general:
+    primary: "gpt-4o"
+    fallback: "claude-3-5-sonnet"
